@@ -8,6 +8,12 @@ namespace Binary_Search_Tree
         {
             Console.WriteLine("Wellcome to Binary Search Tree");
 
+            Operation operation = new Operation();
+            operation.InsertAndDisplay(56);
+            operation.InsertAndDisplay(30);
+            operation.InsertAndDisplay(70);
+
+
         }
     }
 }
