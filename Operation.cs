@@ -57,6 +57,49 @@ namespace Binary_Search_Tree
 
            
         }
+        public void SearchNode (int data)
+        {
+            if (root.data == data)
+            {
+                
+                Console.WriteLine($"{data} is present at root place");
+
+            }
+
+            else
+            {
+                Node p = root;
+                bool isFind = false;
+                while (isFind != true)
+                {
+
+                    if (p.data < data)
+                    {
+                        if (p.right.data == data)
+                        {
+                            isFind = true;
+                            Console.WriteLine($"\n{data} is added to right side of {p.data}");
+                            rightCount++;
+                            break;
+                        }
+                        p = p.right;
+                    }
+                    if (p.data > data)
+                    {
+                        if (p.left.data == data)
+                        {
+                            isFind= true;
+                            Console.WriteLine($"\n{data} is added to left side of {p.data}");
+                            leftCount++;
+                            break;
+                        }
+                        p = p.left;
+                    }
+                }
+               
+            }
+
+        }
         public  void SizeOfTree()
         {
             int size = rightCount + leftCount +1;

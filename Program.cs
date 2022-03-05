@@ -24,6 +24,7 @@ namespace Binary_Search_Tree
             operation.Insert(67);
 
             operation.SizeOfTree();
+            operation.SearchNode(3);
 
 
 
